@@ -8,7 +8,7 @@ import React, {useState} from 'react';
         setCount(count + 1);
     }
 
-     const decrement = () => {
+    const decrement = () => {
         setCount(count - 1);
     }
 
