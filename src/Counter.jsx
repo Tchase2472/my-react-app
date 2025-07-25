@@ -1,3 +1,9 @@
+
+// updater function = A function passed an an argument to setState()
+//                      ex. setYear(y => y + 1);
+//                      This updates based on the previous state not the current state.
+//                      Use an updater function whenever you can. It ensures safe updating.       
+
 import React, {useState} from 'react';
 
  function Counter() {
@@ -5,11 +11,11 @@ import React, {useState} from 'react';
     const [count, setCount] = useState(0);
 
     const increment = () => {
-        setCount(count + 1);
+        setCount(c => c + 1);
     }
 
     const decrement = () => {
-        setCount(count - 1);
+        setCount(c => c - 1);
     }
 
     const reset = () => {
